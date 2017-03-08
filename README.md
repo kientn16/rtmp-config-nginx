@@ -53,16 +53,18 @@ Cài các gói liên quan cho nginx:
     `sudo apt-get install build-essential libpcre3 libpcre3-dev libssl-dev`
 
 Bước 2:
-    - `cd ~`
-    - `mkdir nginx`
-    - `cd nginx`
-    - `git clone https://github.com/sergey-dryabzhinsky/nginx-rtmp-module.git`
-    - `wget http://nginx.org/download/nginx-1.11.8.tar.gz`
-    - `tar -xf nginx-1.11.8.tar.gz`
-    - `cd nginx-1.11.8`
-    - `./configure --with-http_ssl_module --add-module=../nginx-rtmp-module`
-    - `make -j 1`
-    - `sudo make install`
+
+    
+    - cd ~
+    - mkdir nginx
+    - cd nginx
+    - git clone https://github.com/sergey-dryabzhinsky/nginx-rtmp-module.git
+    - wget http://nginx.org/download/nginx-1.11.8.tar.gz
+    - tar -xf nginx-1.11.8.tar.gz
+    - cd nginx-1.11.8
+    - ./configure --with-http_ssl_module --add-module=../nginx-rtmp-module
+    - make -j 1
+    - sudo make install
 > **Notice:** Tham số **--add-module=../nginx-rtmp-module** là đường dẫn tới thư mục nginx-rtmp-module mà chúng ta vừa download ở trên.
 
 ## 3. Cấu hình file nginx.conf ##
